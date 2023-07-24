@@ -3,7 +3,15 @@ const { registerTransforms } = require('@tokens-studio/sd-transforms');
 
 // sd-transforms, 2nd parameter for options can be added
 // See docs: https://github.com/tokens-studio/sd-transforms
-registerTransforms(StyleDictionary);
+registerTransforms(StyleDictionary, {
+  expand: {
+    composition: true,
+    typography: false,
+    border: false,
+    shadow: false,
+  },
+  excludeParentKeys: true,
+});
 
 // example value transform, which just returns the token as is
 StyleDictionary.registerTransform({

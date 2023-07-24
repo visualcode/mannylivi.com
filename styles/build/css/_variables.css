@@ -1,29 +1,35 @@
 /**
  * Do not edit directly
- * Generated on Mon, 24 Jul 2023 15:17:12 GMT
+ * Generated on Mon, 24 Jul 2023 17:26:33 GMT
  */
 
 :root {
-  --sdGlobalStone50: #fafaf9;
-  --sdGlobalStone100: #f5f5f4;
-  --sdGlobalStone200: #e7e5e4;
-  --sdGlobalStone300: #d6d3d1;
-  --sdGlobalStone400: #a8a29e;
-  --sdGlobalStone500: #78716c;
-  --sdGlobalStone600: #57534e;
-  --sdGlobalStone700: #44403c;
-  --sdGlobalStone800: #292524;
-  --sdGlobalStone900: #1c1917;
-  --sdGlobalRose50: #FFF1F2;
-  --sdGlobalRose100: #FFE4E6;
-  --sdGlobalRose200: #FECDD3;
-  --sdGlobalRose300: #FDA4AF;
-  --sdGlobalRose400: #FB7185;
-  --sdGlobalRose500: #F43F5E;
-  --sdGlobalRose600: #E11D48;
-  --sdGlobalRose700: #BE123C;
-  --sdGlobalRose800: #9F1239;
-  --sdGlobalRose900: #881337;
-  --sdGlobalBaseWhite: #fff;
-  --sdGlobalBaseBlack: #000;
+  --sdStone50: #fafaf9;
+  --sdStone100: #f5f5f4;
+  --sdStone200: #e7e5e4;
+  --sdStone300: #d6d3d1;
+  --sdStone400: #a8a29e;
+  --sdStone500: #78716c;
+  --sdStone600: #57534e;
+  --sdStone700: #44403c;
+  --sdStone800: #292524;
+  --sdStone900: #1c1917;
+  --sdRose50: #FFF1F2;
+  --sdRose100: #FFE4E6;
+  --sdRose200: #FECDD3;
+  --sdRose300: #FDA4AF;
+  --sdRose400: #FB7185;
+  --sdRose500: #F43F5E;
+  --sdRose600: #E11D48;
+  --sdRose700: #BE123C;
+  --sdRose800: #9F1239;
+  --sdRose900: #881337;
+  --sdBaseWhite: #fff;
+  --sdBaseBlack: #000;
+  --sdSurfaceMainBg: #f5f5f4; /* The basic colour for the body background */
+  --sdSurfaceAccentBg: #E11D48; /* The main surface colour for Primary actions */
+  --sdTextMainText: #1c1917; /* High contrast text colour on a light surface */
+  --sdTextOnAccentBg: #fafaf9; /* High contrast text colour on an accent background colur */
+  --sdBorderSubtleBorder: #d6d3d1; /* A light border colour on light surface */
+  --sdBorderHighContrastBorder: #a8a29e; /* A high contrast border colour on light surface */
 }
