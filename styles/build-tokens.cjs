@@ -30,7 +30,7 @@ ${formattedVariables({ format: 'css', dictionary, outputReferences })}
 });
 
 const sd = StyleDictionary.extend({
-  source: ['**/*.tokens.json'],
+  source: ['**/*.json'],
   platforms: {
     css: {
       transformGroup: 'tokens-studio',
