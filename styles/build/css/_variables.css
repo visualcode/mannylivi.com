@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 24 Jul 2023 17:26:33 GMT
+ * Generated on Mon, 24 Jul 2023 22:46:57 GMT
  */
 
 :root {
@@ -26,6 +26,21 @@
   --sdRose900: #881337;
   --sdBaseWhite: #fff;
   --sdBaseBlack: #000;
+  --sdFontSizeMedium: 16px;
+  --sdFontSizeSmall: 14px;
+  --sdFontSizeLarge: 24px;
+  --sdFontSizeXlarge: 40px;
+  --sdFontSizeXxlarge: 60px;
+  --sdFontSizeHuge: 186px;
+  --sdFontWeightRegular: 400;
+  --sdFontWeightBold: 700;
+  --sdTextCaseUpper: uppercase;
+  --sdTextCaseNormal: none;
+  --sdLeading01: 24;
+  --sdLeading02: 32;
+  --sdLeading03: 40;
+  --sdLeading04: 72;
+  --sdLeading05: 167;
   --sdSurfaceMainBg: #f5f5f4; /* The basic colour for the body background */
   --sdSurfaceAccentBg: #E11D48; /* The main surface colour for Primary actions */
   --sdTextMainText: #1c1917; /* High contrast text colour on a light surface */
