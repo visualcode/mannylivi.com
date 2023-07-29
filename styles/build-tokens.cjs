@@ -1,13 +1,14 @@
 const StyleDictionary = require('style-dictionary');
 const { registerTransforms } = require('@tokens-studio/sd-transforms');
+const { getTailwindFormat } = require('sd-tailwindcss-transformer');
 
 // sd-transforms, 2nd parameter for options can be added
 // See docs: https://github.com/tokens-studio/sd-transforms
 registerTransforms(StyleDictionary, {
   expand: {
     composition: true,
-    typography: false,
-    border: false,
+    typography: true,
+    border: true,
     shadow: false,
   },
   excludeParentKeys: true,
@@ -39,6 +40,14 @@ ${formattedVariables({ format: 'css', dictionary, outputReferences })}
 
 const sd = StyleDictionary.extend({
   source: ['**/*.json'],
+  format: {
+    tailwindFormat: ({ dictionary }) => {
+      return getTailwindFormat({
+        dictionary,
+        type: 'all',
+      });
+    },
+  },
   platforms: {
     css: {
       transformGroup: 'tokens-studio',
@@ -51,7 +60,17 @@ const sd = StyleDictionary.extend({
         },
       ],
     },
-  },
+    tailwind: {
+      transformGroup: 'tokens-studio',
+      buildPath: 'build/web/',
+      files: [
+        {
+          destination: 'tailwind.config.js',
+          format: 'tailwindFormat',
+        },
+      ],
+    },
+  },    
 });
 sd.cleanAllPlatforms(); // optionally, cleanup files first..
 sd.buildAllPlatforms();
