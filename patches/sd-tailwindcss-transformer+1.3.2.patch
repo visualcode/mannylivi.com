@@ -1,0 +1,10 @@
+diff --git a/node_modules/sd-tailwindcss-transformer/dist/index.js b/node_modules/sd-tailwindcss-transformer/dist/index.js
+index 63da73a..d67c84b 100644
+--- a/node_modules/sd-tailwindcss-transformer/dist/index.js
++++ b/node_modules/sd-tailwindcss-transformer/dist/index.js
+@@ -12,3 +12,4 @@ var l=function(){return l=Object.assign||function(e){for(var n,r=1,o=arguments.l
+ }`,u})()}`;var P=(t,e,n)=>{let r=t.reduce((i,a)=>{if(a.attributes===void 0)throw new Error(`Token ${a.name} has no attributes`);return (a.attributes.category===e||e==="all")&&(n?i[a.path.join(".")]=`var(--${a.name})`:i[a.path.join(".")]=a.value),i},{}),o={};return Object.keys(r).forEach(i=>{let a=i.split(".").filter(u=>u!==e);v(o,a,r[i]);}),JSON.stringify(o,null,2)},E=({dictionary:{allTokens:t},type:e,isVariables:n,tailwind:r})=>{let o=P(t,e,n);if(e==="all"){let i=f(r?.darkMode,"class"),a=f(Array.isArray(r?.content)?r?.content.map(s=>`"${s}"`):r?.content,['"./src/**/*.{ts,tsx}"']),u=f(r?.plugins?.map(s=>`require("@tailwindcss/${s}")`),[]);return C(e,o,i,a,u)}else return `module.exports = ${w(o)}`},V=({type:t,formatType:e="js",isVariables:n=!1,source:r,transforms:o,buildPath:i,tailwind:a})=>{if(t===void 0)throw new Error("type is required");if(e!=="js"&&e!=="cjs")throw new Error('formatType must be "js" or "cjs"');return {source:f(r,["tokens/**/*.json"]),format:{tailwindFormat:({dictionary:u})=>E({dictionary:u,formatType:e,isVariables:n,type:t,tailwind:a})},platforms:{[t!=="all"?`tailwind/${t}`:"tailwind"]:{transforms:f(o,["attribute/cti","name/cti/kebab"]),buildPath:f(i,"build/web/"),files:[{destination:t!=="all"?`${t}.tailwind.js`:`tailwind.config.${e}`,format:"tailwindFormat"}]}}}};
+ 
+ exports.makeSdTailwindConfig = V;
++exports.getTailwindFormat = E;
+\ No newline at end of file
