@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sat, 29 Jul 2023 15:08:50 GMT
+ * Generated on Fri, 11 Aug 2023 12:11:56 GMT
  */
 
 :root {
@@ -26,33 +26,115 @@
   --sdRose900: #881337;
   --sdBaseWhite: #fff;
   --sdBaseBlack: #000;
-  --sdFontSizeMedium: 16px;
-  --sdFontSizeSmall: 14px;
-  --sdFontSizeLarge: 24px;
-  --sdFontSizeXlarge: 40px;
-  --sdFontSizeXxlarge: 60px;
-  --sdFontSizeHuge: 186px;
-  --sdFontWeightRegular: 400;
-  --sdFontWeightBold: 700;
+  --sdFontSizeSmall: 0.875rem;
+  --sdFontSizeMedium: 1rem;
+  --sdFontSizeLarge: 1.438rem;
+  --sdFontSizeXlarge: 2.563rem;
+  --sdFontSizeXxlarge: 3.625rem;
+  --sdFontSizeHuge: 10.563rem;
+  --sdFontNormal: 400;
+  --sdFontBold: 700;
   --sdTextCaseUpper: uppercase;
   --sdTextCaseNormal: none;
-  --sdLeading01: 24;
-  --sdLeading02: 32;
-  --sdLeading03: 40;
-  --sdLeading04: 72;
-  --sdLeading05: 167;
+  --sdLeadingDefault: 1;
+  --sdLeadingStandard: 1.25;
+  --sdLeadingReading: 1.5;
+  --sdLeadingDisplay: 0.84;
   --sdBorderWidth01: 1px;
   --sdBorderWidth02: 2px;
-  --sdBorderDefaultColor: #a8a29e;
+  --sdBorderDefaultColor: #78716c;
   --sdBorderDefaultWidth: 1px;
   --sdBorderDefaultStyle: solid;
-  --sdBorderSubtleColor: #d6d3d1;
+  --sdBorderSubtleColor: #e7e5e4;
   --sdBorderSubtleWidth: 1px;
   --sdBorderSubtleStyle: solid;
-  --sdSurfaceMainBg: #f5f5f4; /* The basic colour for the body background */
-  --sdSurfaceAccentBg: #E11D48; /* The main surface colour for Primary actions */
-  --sdTextMainText: #1c1917; /* High contrast text colour on a light surface */
-  --sdTextOnAccentBg: #fafaf9; /* High contrast text colour on an accent background colur */
-  --sdBorderSubtleBorder: #d6d3d1; /* A light border colour on light surface */
-  --sdBorderHighContrastBorder: #a8a29e; /* A high contrast border colour on light surface */
+  --sdDisplayHeroFontWeight: 800;
+  --sdDisplayHeroLineHeight: 0.84;
+  --sdDisplayHeroFontSize: 10.563rem;
+  --sdDisplayHeroLetterSpacing: -1.6;
+  --sdDisplayHeroFontFamily: manrope;
+  --sdDisplayHeroTextCase: uppercase;
+  --sdDisplayTextFontWeight: 700;
+  --sdDisplayTextLineHeight: 1.25;
+  --sdDisplayTextFontSize: 3.625rem;
+  --sdDisplayTextTextCase: none;
+  --sdDisplayTextLetterSpacing: -1.6;
+  --sdDisplayTextFontFamily: manrope;
+  --sdTrackingNormal: 0;
+  --sdTrackingTight: -0.5;
+  --sdTrackingTighter: -1.6;
+  --sdTitleTextFontWeight: 700;
+  --sdTitleTextLineHeight: 1.25;
+  --sdTitleTextFontSize: 2.563rem;
+  --sdTitleTextLetterSpacing: 0;
+  --sdTitleTextFontFamily: manrope;
+  --sdTitleTextTextCase: none;
+  --sdTitleTextParagraphSpacing: spacing.06;
+  --sdSubtitleTextFontWeight: 700;
+  --sdSubtitleTextLineHeight: 1.5;
+  --sdSubtitleTextFontSize: 1.438rem;
+  --sdSubtitleTextLetterSpacing: -0.5;
+  --sdSubtitleTextFontFamily: manrope;
+  --sdSubtitleTextTextCase: none;
+  --sdBodyTextFontWeight: 400;
+  --sdBodyTextLineHeight: 1.25;
+  --sdBodyTextFontSize: 1rem;
+  --sdBodyTextLetterSpacing: 0;
+  --sdBodyTextFontFamily: manrope;
+  --sdBodyTextTextCase: none;
+  --sdBodyLowTextFontWeight: 400;
+  --sdBodyLowTextLineHeight: 1.25;
+  --sdBodyLowTextFontSize: 0.875rem;
+  --sdBodyLowTextLetterSpacing: 0;
+  --sdBodyLowTextFontFamily: manrope;
+  --sdBodyLowTextTextCase: none;
+  --sdLabelTextFontWeight: 700;
+  --sdLabelTextLineHeight: 1;
+  --sdLabelTextFontSize: 0.875rem;
+  --sdLabelTextLetterSpacing: 0;
+  --sdLabelTextFontFamily: manrope;
+  --sdLabelTextTextCase: none;
+  --sdSansFamily: manrope;
+  --sdRadiusNone: 0;
+  --sdRadiusSm: 0.125rem;
+  --sdRounded: 0.25rem;
+  --sdTextNoUnderline: none;
+  --sdTextUnderline: underline;
+  --sdFontExtrabold: 800;
+  --sdSpacing10: 11.391rem;
+  --sdSpacing11: 17.086rem;
+  --sdSpacing01: 0.188rem;
+  --sdSpacing02: 0.313rem;
+  --sdSpacing03: 0.438rem;
+  --sdSpacing04: 0.688rem;
+  --sdSpacing05: 1rem;
+  --sdSpacing06: 1.5rem;
+  --sdSpacing07: 2.25rem;
+  --sdSpacing08: 3.375rem;
+  --sdSpacing09: 7.594rem;
+  --sdSpacingHeroButton: 1.125rem; /* Space for big buttons */
+  --sdSmall: 0.875rem;
+  --sdMedium: 1rem;
+  --sdLarge: 1.438rem;
+  --sdXlarge: 2.563rem;
+  --sdXxlarge: 3.625rem;
+  --sdXxxlarge: 5.875rem;
+  --sdHuge: 10.563rem;
+  --sdBorderHeroButtonColor: #F43F5E;
+  --sdBorderHeroButtonWidth: 2px;
+  --sdBorderHeroButtonStyle: solid;
+  --sdLabelButtonHeroFontFamily: manrope;
+  --sdLabelButtonHeroFontWeight: 400;
+  --sdLabelButtonHeroLineHeight: 1;
+  --sdLabelButtonHeroFontSize: 1.438rem;
+  --sdLabelButtonHeroTextCase: none;
+  --sdMediumParagraph: spacing.06;
+  --sdSurfaceMainBg: #1c1917; /* The basic colour for the body background */
+  --sdSurfaceAccentBg: #F43F5E; /* The main surface colour for Primary actions */
+  --sdTextMainText: #f5f5f4; /* High contrast text colour on a light surface */
+  --sdTextSecondaryText: #a8a29e;
+  --sdTextOnAccentBg: #1c1917; /* High contrast text colour on an accent background colur */
+  --sdTextAccentText: #FB7185;
+  --sdBorderSubtleBorder: #e7e5e4; /* A light border colour on light surface */
+  --sdBorderHighContrastBorder: #78716c; /* A high contrast border colour on light surface */
 }

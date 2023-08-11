@@ -62,7 +62,7 @@ const sd = StyleDictionary.extend({
     },
     tailwind: {
       transformGroup: 'tokens-studio',
-      buildPath: 'build/web/',
+      buildPath: '../',
       files: [
         {
           destination: 'tailwind.config.js',
